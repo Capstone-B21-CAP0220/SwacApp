@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SwacApp</string>
+    <string name="card_description">6 Layanan Berdasarkan <br />Permen PPPA No.4 Tahun 2018</string>
+    <string name="card_title"><![CDATA[Layanan Pengaduan Perempuan & Anak]]></string>
+    <string name="card_description_more">- Pengaduan Masyarakat<br />
+        <br />- Penjangkauan Korban<br />
+        <br />- Pengelolaan Kasus<br />
+        <br />- Penampungan Sementara<br />
+        <br />- Mediasi<br />
+        <br />- Pendampingan Korban</string>
 </resources>
