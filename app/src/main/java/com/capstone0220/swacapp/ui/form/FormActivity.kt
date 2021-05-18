@@ -1,7 +1,8 @@
 package com.capstone0220.swacapp.ui.form
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.capstone0220.swacapp.R
 
 class FormActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
