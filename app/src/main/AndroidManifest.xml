@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SwacApp">
-        <activity android:name=".ui.form.FormActivity"></activity>
+        <activity android:name=".ui.information.InformationActivity"></activity>
+        <activity android:name=".ui.result.ResultActivity" />
+        <activity android:name=".ui.confirmation.ConfirmationActivity" />
+        <activity android:name=".ui.form.FormActivity" />
         <activity android:name=".ui.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_primary"
+    tools:context=".ui.result.ResultActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="LAPORAN SUDAH KAMI PROSES"
+        android:textColor="@color/black_text_primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:background="@drawable/background_input_form"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_result_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingStart="4dp"
+            android:text="Nama"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_result_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/grey_light"
+            tools:text="Ini Nama Pelapor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Email"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_result_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/grey_light"
+            tools:text="email.pelapor@gmail.com" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Nomor Telepon"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_result_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/grey_light"
+            tools:text="+6108335234223" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Jenis Laporan"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_result_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/grey_light"
+            tools:text="Kekerasan Dalam Keluarga" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Tindakan Diproses"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_result_process"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/grey_light"
+            tools:text="Petugas PPPA akan menghubungi anda" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:paddingStart="4dp"
+            android:text="* Silakan menunggu 1x24 jam agar petugas kami dapat menindaklanjuti laporan melalui email atau telepon"
+            android:textColor="@color/grey_lighter" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_result_home"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/button_primary"
+        android:elevation="4dp"
+        android:text="HOME"
+        android:textColor="@color/black_text_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
