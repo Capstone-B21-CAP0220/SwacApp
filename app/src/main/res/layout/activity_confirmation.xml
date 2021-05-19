@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_primary"
+    tools:context=".ui.confirmation.ConfirmationActivity">
+
+    <ImageView
+        android:id="@+id/btn_confirm_back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="@string/form_pelaporan"
+        android:textColor="@color/black_text_primary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_confirm_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_confirm_back"
+        app:layout_constraintTop_toTopOf="@+id/btn_confirm_back" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/background_input_form"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingStart="4dp"
+            android:text="Nama"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_confirm_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black_text_secondary"
+            tools:text="Ini Nama Pelapor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Email"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_confirm_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black_text_secondary"
+            tools:text="email.pelapor@gmail.com" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Nomor Telepon"
+            android:textColor="@color/grey_lighter" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_confirm_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black_text_secondary"
+            tools:text="+6108335234223" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Peringatan!"
+        android:textColor="@color/black_text_secondary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Pastikan bahwa data yang anda masukkan benar dan dapat dipertanggungjawabkan."
+        android:textColor="@color/grey_light"
+        app:layout_constraintBottom_toTopOf="@+id/btn_confirm_report"
+        app:layout_constraintEnd_toEndOf="@+id/btn_confirm_report"
+        app:layout_constraintStart_toStartOf="@+id/btn_confirm_report" />
+
+    <Button
+        android:id="@+id/btn_confirm_report"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/button_primary"
+        android:elevation="4dp"
+        android:text="LAPOR"
+        android:textColor="@color/black_text_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
