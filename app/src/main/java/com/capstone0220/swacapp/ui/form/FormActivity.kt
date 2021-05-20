@@ -2,9 +2,9 @@ package com.capstone0220.swacapp.ui.form
 
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.capstone0220.swacapp.R
 import com.capstone0220.swacapp.databinding.ActivityFormBinding
 import com.capstone0220.swacapp.ui.confirmation.ConfirmationActivity
@@ -20,7 +20,7 @@ class FormActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.apply {
             btnFormBack.setOnClickListener(this@FormActivity)
-            btnFormBack.setOnClickListener(this@FormActivity)
+            btnFormReport.setOnClickListener(this@FormActivity)
         }
     }
 

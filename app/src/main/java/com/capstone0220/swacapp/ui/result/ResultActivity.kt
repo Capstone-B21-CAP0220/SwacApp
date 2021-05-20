@@ -1,9 +1,9 @@
 package com.capstone0220.swacapp.ui.result
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.capstone0220.swacapp.R
 import com.capstone0220.swacapp.databinding.ActivityResultBinding
 import com.capstone0220.swacapp.ui.home.HomeActivity
@@ -11,6 +11,7 @@ import com.capstone0220.swacapp.ui.home.HomeActivity
 class ResultActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityResultBinding
+//    private var doubleBackToExitPressedOnce = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,8 +29,14 @@ class ResultActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btn_result_home -> {
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
-                onDestroy()
+                finishAffinity()
             }
         }
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
+        finishAffinity()
     }
 }

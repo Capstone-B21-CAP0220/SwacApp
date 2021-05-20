@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.toolbar_infrormation.*
 class InformationActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityInformationBinding
-    private val url = "https://www.kemenpppa.go.id/"
+    private val url = "https://kekerasan.kemenpppa.go.id/ringkasan"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityInformationBinding.inflate(layoutInflater)

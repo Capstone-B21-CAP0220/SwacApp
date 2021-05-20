@@ -1,9 +1,9 @@
 package com.capstone0220.swacapp.ui.confirmation
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.capstone0220.swacapp.R
 import com.capstone0220.swacapp.databinding.ActivityConfirmationBinding
 import com.capstone0220.swacapp.ui.result.ResultActivity
