@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.capstone0220.swacapp">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,7 +13,7 @@
         <activity android:name=".ui.result.ResultActivity" />
         <activity android:name=".ui.confirmation.ConfirmationActivity" />
         <activity android:name=".ui.form.FormActivity" />
-        <activity android:name=".ui.home.HomeActivity">
+        <activity android:name=".ui.home.HomeActivity"></activity>
         <activity android:name=".ui.welcome.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

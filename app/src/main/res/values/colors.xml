@@ -23,6 +23,6 @@
     <color name="blue_primary">#F7FDFE</color>
     <color name="blue_secondary">#E5FAFF</color>
     <color name="blue_tertiary">#EDFBFD</color>
-
+    <color name="ic_launcher_background">#FFFFFF</color>
     <color name="red">#F44336</color>
 </resources>
