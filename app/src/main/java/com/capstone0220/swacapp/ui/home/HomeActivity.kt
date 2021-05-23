@@ -43,9 +43,10 @@ class HomeActivity : AppCompatActivity(){
 
         var sliderItems : MutableList<SliderItem> = ArrayList()
 
-        sliderItems.add(SliderItem(R.drawable.information3))
-        sliderItems.add(SliderItem(R.drawable.infomation1))
+        sliderItems.add(SliderItem(R.drawable.information1))
         sliderItems.add(SliderItem(R.drawable.information2))
+        sliderItems.add(SliderItem(R.drawable.information3))
+        sliderItems.add(SliderItem(R.drawable.information4))
 
         viewPager2.adapter = SliderAdapter(sliderItems,viewPager2)
 
