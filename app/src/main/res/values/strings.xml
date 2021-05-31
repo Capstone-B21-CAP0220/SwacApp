@@ -1,16 +1,54 @@
 <resources>
     <string name="app_name">SwacApp</string>
-    <string name="card_description">6 Layanan Berdasarkan "\n" Permen PPPA No.4 Tahun 2018</string>
-    <string name="card_title"><![CDATA[Layanan Pengaduan Perempuan & Anak]]></string>
-    <string name="card_description_more">
-        "\n" - Pengaduan Masyarakat
-        "\n" - Penjangkauan Korban
-        "\n" - Pengelolaan Kasus
-        "\n" - Penampungan Sementara
-        "\n" - Mediasi
-        "\n" - Pendampingan Korban</string>
+    <string name="card_description1">6 Layanan Berdasarkan "\n" Permen PPPA No.4 Tahun 2018</string>
+    <string name="card_title1"><![CDATA[Layanan Pengaduan Perempuan & Anak]]></string>
+    <string name="card_description_more1">
+        <ul>
+            \n<li>Pengaduan Masyarakat</li>
+            \n<li>Penjangkauan Korban</li>
+            \n<li>Pengelolaan Kasus</li>
+            \n<li>Penampungan Sementara</li>
+            \n<li>Mediasi</li>
+            \n<li>Pendampingan Korban</li>
+        </ul>
+    </string>
     <string name="form_pelaporan">Form Pelaporan</string>
     <string name="ic_swacapp">Icon Swac App</string>
     <string name="information">Informasi</string>
     <string name="loading">Loading...</string>
+
+    <string name="card_title2"><![CDATA[Kategori Perempuan Korban Kekerasan]]></string>
+    <string name="card_description_more2">
+        <ul>
+            \n<li>Kekerasan berbasis gender yang memiliki dampak kompleks</li>
+            \n<li>Dampak korban berskala Nasional dan Internasional</li>
+            \n<li>Korban WNI di luar negeri termasuk TKI dan TKP di luar negeri</li>
+            \n<li>Korban massal dan atau mengalami ancaman kehilangan nyawa serta ancaman kemerdekaan</li>
+            \n<li>Pelaku kekerasan perempuan didugajaringan kejahatan terorganisir</li>
+            \n<li>Pelaku kekerasan diduga pejabat publik</li>
+            \n<li>TKP lintas provinsi dan kasus yang tidak dapat diselesaikan daerah</li>
+        </ul>
+    </string>
+
+    <string name="card_title3"><![CDATA[15 Kagetori AMPK]]></string>
+    <string name="card_description3">Anak Memerlukan Perlindungan Khusus</string>
+    <string name="card_description_more3">
+        <ul>
+            \n<li>Anak dalam situasi darurat</li>
+            \n<li>Anak berhadapan dengan Hukum</li>
+            \n<li>Anak dari kelompok minoritas dan terisolasi</li>
+            \n<li>Anak yang tereksploitasi secara ekonomi dan/atau seksual</li>
+            \n<li>Anak yang menjadi korban penyalahgunaan NAPZA (AKP-NAPZA) </li>
+            \n<li>Anak yang menjadi korban pornografi</li>
+            \n<li>Anak dengan HIV/AIDS (ADHA)</li>
+            \n<li>Anak korban penculian, penjualan, dan/atau perdagangan</li>
+            \n<li>Anak korban Kekerasan fisik, dan/atau psikis.</li>
+            \n<li>Anak korban kejahatan seksual</li>
+            \n<li>Anak korban jaringan teroris</li>
+            \n<li>Anak Penyandang Disabilitas</li>
+            \n<li>Anak korban perlakukan salah dan penelantaran</li>
+            \n<li>Anak dengan perilaku sosial menyimpang</li>
+            \n<li>Anak yang menjadi korban stigmatisasi dari pelabelan terkait dengan kondisi Orang Tuanya</li>
+        </ul>
+    </string>
 </resources>

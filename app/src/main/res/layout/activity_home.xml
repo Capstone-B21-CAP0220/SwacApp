@@ -61,14 +61,16 @@
             </LinearLayout>
 
 
-
             <LinearLayout
-                android:layout_width="300dp"
-                android:layout_height="350dp"
+
+                android:id="@+id/desc_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="10dp"
-                android:orientation="vertical"
+                android:layout_marginEnd="32dp"
                 android:background="@drawable/background_card_main"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sliderContainer">
@@ -76,30 +78,103 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/card_title"
-                    android:textColor="@color/black_text_primary"
+                    android:layout_marginTop="18dp"
                     android:gravity="center_horizontal"
-                    android:layout_marginTop="18dp"/>
+                    android:text="@string/card_title1"
+                    android:textColor="@color/black_text_primary" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="@string/card_description"
-                    android:textSize="12sp"
                     android:gravity="center_horizontal"
-                    />
+                    android:text="@string/card_description1"
+                    android:textSize="12sp" />
 
                 <TextView
-                    android:fontFamily="sans-serif-condensed"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/card_description_more"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="sans-serif-condensed"
                     android:gravity="center_vertical"
-                    android:layout_marginStart="18dp"/>
+                    android:text="@string/card_description_more1" />
 
             </LinearLayout>
 
+
+            <LinearLayout
+                android:id="@+id/desc_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/background_card_main"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/desc_3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/card_title2"
+                    android:textColor="@color/black_text_primary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_vertical"
+                    android:text="@string/card_description_more2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/desc_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/background_card_main"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/desc_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/card_title3"
+                    android:textColor="@color/black_text_primary" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/card_description3"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_vertical"
+                    android:text="@string/card_description_more3" />
+
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
