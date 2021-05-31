@@ -8,7 +8,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.capstone0220.swacapp.databinding.ActivitySplashScreenBinding
 import com.capstone0220.swacapp.ui.home.HomeActivity
-import kotlinx.android.synthetic.main.activity_information.*
 
 class SplashScreen : AppCompatActivity() {
 

@@ -9,9 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.capstone0220.swacapp.R
 import com.capstone0220.swacapp.databinding.ActivityInformationBinding
-import kotlinx.android.synthetic.main.activity_information.*
-import kotlinx.android.synthetic.main.navigation_botom.*
-import kotlinx.android.synthetic.main.toolbar_infrormation.*
 
 class InformationActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -23,16 +20,15 @@ class InformationActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
         binding.apply {
-            btn_information_back.setOnClickListener(this@InformationActivity)
+            binding.toolbarInformation.btnInformationBack.setOnClickListener(this@InformationActivity)
         }
 
         val webView = findViewById<WebView>(R.id.webView)
-
-        progressBar.visibility = View.VISIBLE
+        binding.progressBar.visibility = View.VISIBLE
         webView.settings.javaScriptEnabled = true
         webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView, url: String) {
-                progressBar.visibility = View.GONE
+                binding.progressBar.visibility = View.GONE
                 view.loadUrl("javascript:alert('Web Loaded successfully')")
             }
         }

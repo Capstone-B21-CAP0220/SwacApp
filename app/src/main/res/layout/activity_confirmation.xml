@@ -23,13 +23,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center_horizontal"
-        android:text="@string/form_pelaporan"
+        android:text="@string/konfirmasi_pelaporan"
         android:textColor="@color/black_text_primary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_confirm_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btn_confirm_back"
         app:layout_constraintTop_toTopOf="@+id/btn_confirm_back" />
+
 
 
     <LinearLayout
@@ -56,11 +57,13 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:enabled="false"
             android:id="@+id/edt_confirm_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:inputType="text"
             android:textColor="@color/black_text_secondary"
             tools:text="Ini Nama Pelapor" />
 
@@ -74,6 +77,7 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
+            android:enabled="false"
             android:id="@+id/edt_confirm_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,13 +96,37 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_confirm_no"
+            android:enabled="false"
+            android:id="@+id/edt_confirm_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:textColor="@color/black_text_secondary"
             tools:text="+6108335234223" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Deskripsi Laporan"
+            android:textColor="@color/grey_lighter" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="100dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:enabled="false"
+                android:id="@+id/edt_confirm_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black_text_secondary"
+                tools:text="Deskripsikan dengan jelas kejadian yang dialami Deskripsikan dengan jelas kejadian yang dialami" />
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 

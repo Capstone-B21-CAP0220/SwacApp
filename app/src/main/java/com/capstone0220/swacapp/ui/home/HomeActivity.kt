@@ -15,7 +15,7 @@ import com.capstone0220.swacapp.ui.form.FormActivity
 import com.capstone0220.swacapp.ui.information.InformationActivity
 import com.capstone0220.swacapp.ui.slider.SliderAdapter
 import com.capstone0220.swacapp.ui.slider.SliderItem
-import kotlinx.android.synthetic.main.navigation_botom.*
+
 import kotlin.math.abs
 
 class HomeActivity : AppCompatActivity(){
@@ -29,11 +29,11 @@ class HomeActivity : AppCompatActivity(){
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //Navigate
-        btn_information.setOnClickListener {
+        binding.include2.btnInformation.setOnClickListener {
             val intent = Intent(this, InformationActivity::class.java)
             startActivity(intent)
         }
-        btn_lapor.setOnClickListener {
+        binding.include2.btnLapor.setOnClickListener {
             val intent = Intent(this, FormActivity::class.java)
             startActivity(intent)
         }
