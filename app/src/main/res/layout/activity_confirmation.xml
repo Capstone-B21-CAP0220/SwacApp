@@ -7,6 +7,19 @@
     android:background="@color/blue_primary"
     tools:context=".ui.confirmation.ConfirmationActivity">
 
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.SwacApp.progressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <ImageView
         android:id="@+id/btn_confirm_back"
         android:layout_width="36dp"
@@ -32,8 +45,8 @@
         app:layout_constraintTop_toTopOf="@+id/btn_confirm_back" />
 
 
-
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
@@ -57,12 +70,12 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:enabled="false"
             android:id="@+id/edt_confirm_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:enabled="false"
             android:inputType="text"
             android:textColor="@color/black_text_secondary"
             tools:text="Ini Nama Pelapor" />
@@ -77,12 +90,12 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:enabled="false"
             android:id="@+id/edt_confirm_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:enabled="false"
             android:textColor="@color/black_text_secondary"
             tools:text="email.pelapor@gmail.com" />
 
@@ -96,12 +109,12 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:enabled="false"
             android:id="@+id/edt_confirm_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:enabled="false"
             android:textColor="@color/black_text_secondary"
             tools:text="+6108335234223" />
 
@@ -113,17 +126,19 @@
             android:paddingStart="4dp"
             android:text="Deskripsi Laporan"
             android:textColor="@color/grey_lighter" />
+
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:scrollbars="vertical"
-            android:layout_height="100dp">
+            android:layout_height="100dp"
+            android:scrollbars="vertical">
+
             <com.google.android.material.textfield.TextInputEditText
-                android:enabled="false"
                 android:id="@+id/edt_confirm_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
+                android:enabled="false"
                 android:textColor="@color/black_text_secondary"
                 tools:text="Deskripsikan dengan jelas kejadian yang dialami Deskripsikan dengan jelas kejadian yang dialami" />
         </androidx.core.widget.NestedScrollView>
@@ -131,6 +146,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"

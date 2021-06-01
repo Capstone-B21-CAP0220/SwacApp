@@ -46,6 +46,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_result_name"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -64,6 +65,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_result_email"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -82,6 +84,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_result_no"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -100,6 +103,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_result_category"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -118,6 +122,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_result_process"
+            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
