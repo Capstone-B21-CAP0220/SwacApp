@@ -7,6 +7,19 @@
     android:background="@color/blue_primary"
     tools:context=".ui.confirmation.ConfirmationActivity">
 
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:elevation="10dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.SwacApp.progressBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
     <ImageView
         android:id="@+id/btn_confirm_back"
         android:layout_width="36dp"
@@ -23,7 +36,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center_horizontal"
-        android:text="@string/form_pelaporan"
+        android:text="@string/konfirmasi_pelaporan"
         android:textColor="@color/black_text_primary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/btn_confirm_back"
@@ -33,9 +46,10 @@
 
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="18dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_marginBottom="42dp"
         android:background="@drawable/background_input_form"
         android:elevation="8dp"
@@ -61,6 +75,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:enabled="false"
+            android:inputType="text"
             android:textColor="@color/black_text_secondary"
             tools:text="Ini Nama Pelapor" />
 
@@ -79,6 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:enabled="false"
             android:textColor="@color/black_text_secondary"
             tools:text="email.pelapor@gmail.com" />
 
@@ -92,17 +109,44 @@
             android:textColor="@color/grey_lighter" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edt_confirm_no"
+            android:id="@+id/edt_confirm_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:enabled="false"
             android:textColor="@color/black_text_secondary"
             tools:text="+6108335234223" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingStart="4dp"
+            android:text="Deskripsi Laporan"
+            android:textColor="@color/grey_lighter" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scrollbars="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_confirm_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:enabled="false"
+                android:textColor="@color/black_text_secondary"
+                tools:text="Deskripsikan dengan jelas kejadian yang dialami Deskripsikan dengan jelas kejadian yang dialami" />
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -118,23 +162,26 @@
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
         android:text="Pastikan bahwa data yang anda masukkan benar dan dapat dipertanggungjawabkan."
         android:textColor="@color/grey_light"
         app:layout_constraintBottom_toTopOf="@+id/btn_confirm_report"
-        app:layout_constraintEnd_toEndOf="@+id/btn_confirm_report"
-        app:layout_constraintStart_toStartOf="@+id/btn_confirm_report" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_confirm_report"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="32dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="@color/button_primary"
         android:elevation="4dp"
         android:text="LAPOR"
+        android:layout_marginHorizontal="100dp"
+        android:minHeight="60dp"
         android:textColor="@color/black_text_primary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
