@@ -14,6 +14,7 @@
         <activity android:name=".ui.confirmation.ConfirmationActivity" />
         <activity android:name=".ui.form.FormActivity" />
         <activity android:name=".ui.home.HomeActivity">
+        <activity android:name=".ui.welcome.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
