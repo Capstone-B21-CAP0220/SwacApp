@@ -18,11 +18,11 @@
 
     <color name="white">#FFFFFFFF</color>
 
-    <color name="button_primary">#4ADEFF</color>
+    <color name="button_primary">#29D8FF</color>
 
-    <color name="blue_primary">#F7FDFE</color>
-    <color name="blue_secondary">#E5FAFF</color>
-    <color name="blue_tertiary">#EDFBFD</color>
+    <color name="blue_primary">#D6F9FF</color>
+    <color name="blue_secondary">#77E5FF</color>
+    <color name="blue_tertiary">#B3F5FF</color>
     <color name="ic_launcher_background">#FFFFFF</color>
     <color name="red">#F44336</color>
 </resources>

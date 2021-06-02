@@ -2,15 +2,8 @@
 
   <item>
     <shape>
-      <padding  android:right="1dp" android:bottom="1.5dp"  />
-      <solid android:color="#DADADA" />
-      <corners android:radius="15dp" />
-    </shape>
-  </item>
-  <item>
-    <shape>
-      <padding  android:right="0.5dp" android:bottom="1.5dp"  />
-      <solid android:color="#DADADA" />
+      <padding  android:right="2dp" android:bottom="5dp" android:left="2dp" android:top="-4dp"/>
+      <solid android:color="#B9E9F3" />
       <corners android:radius="15dp" />
     </shape>
   </item>
