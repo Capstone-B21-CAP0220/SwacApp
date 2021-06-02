@@ -9,11 +9,13 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.capstone0220.swacapp.R
 import com.capstone0220.swacapp.databinding.ActivityInformationBinding
+import com.capstone0220.swacapp.ui.utils.NetworkMonitor
 
 class InformationActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityInformationBinding
     private val url = "https://kekerasan.kemenpppa.go.id/ringkasan"
+    private lateinit var networkMonitor: NetworkMonitor
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityInformationBinding.inflate(layoutInflater)
@@ -23,6 +25,20 @@ class InformationActivity : AppCompatActivity(), View.OnClickListener {
             binding.toolbarInformation.btnInformationBack.setOnClickListener(this@InformationActivity)
         }
 
+        checkConnections()
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btn_information_back -> {
+                onBackPressed()
+            }
+        }
+    }
+
+
+    fun webView(){
+        binding.disconnected.disconnectedMsg.visibility = View.INVISIBLE
         val webView = findViewById<WebView>(R.id.webView)
         binding.progressBar.visibility = View.VISIBLE
         webView.settings.javaScriptEnabled = true
@@ -42,11 +58,21 @@ class InformationActivity : AppCompatActivity(), View.OnClickListener {
         webView.loadUrl(url)
     }
 
-    override fun onClick(v: View?) {
-        when (v?.id) {
-            R.id.btn_information_back -> {
-                onBackPressed()
+
+    private fun checkConnections(){
+        networkMonitor = NetworkMonitor(application)
+        networkMonitor.observe(this,{isAvailable->
+            when(isAvailable){
+                true -> {
+                    webView()
+                    binding.webView.visibility = WebView.VISIBLE
+                }
+                false -> {
+                    binding.webView.visibility = WebView.GONE
+                    binding.disconnected.disconnectedMsg.visibility = View.VISIBLE
+                }
             }
-        }
+        })
+
     }
 }
