@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue_primary"
     tools:context=".ui.result.ResultActivity">
-
-
+    
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -136,7 +135,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:paddingStart="4dp"
-            android:text="* Silakan menunggu 1x24 jam agar petugas kami dapat menindaklanjuti laporan melalui email atau telepon"
+            android:text="* Silakan screenshot dan menunggu 1x24 jam agar petugas kami dapat menindaklanjuti laporan melalui email atau telepon"
             android:textColor="@color/grey_lighter" />
 
     </LinearLayout>
