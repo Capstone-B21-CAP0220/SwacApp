@@ -14,9 +14,7 @@ import org.json.JSONObject
 class ResultActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityResultBinding
-    companion object {
-        private val TAG = ResultActivity::class.java.simpleName
-    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
@@ -47,7 +45,6 @@ class ResultActivity : AppCompatActivity(), View.OnClickListener {
     fun setData(){
         Toast.makeText(this@ResultActivity,"Selamat, Pelaporan Berhasil", Toast.LENGTH_SHORT).show()
         val results = intent.getStringExtra("json_results")
-//        binding.jsonResultsTextview.text = results
         val responseObject = JSONObject(results)
         val data = responseObject.getJSONObject("data")
         val edtResName = findViewById<EditText>(R.id.edt_result_name)
