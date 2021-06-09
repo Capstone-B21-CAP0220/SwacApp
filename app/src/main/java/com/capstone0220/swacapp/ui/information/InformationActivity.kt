@@ -36,7 +36,6 @@ class InformationActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-
     fun webView(){
         binding.disconnected.disconnectedMsg.visibility = View.INVISIBLE
         val webView = findViewById<WebView>(R.id.webView)

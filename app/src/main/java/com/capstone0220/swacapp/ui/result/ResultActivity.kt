@@ -53,9 +53,9 @@ class ResultActivity : AppCompatActivity(), View.OnClickListener{
         val edtResProcess = findViewById<EditText>(R.id.edt_result_process)
 
         edtResName.setText(data.getString("name").toString())
-        edtResEmail.setText(data.getString("job").toString())
-        edtResPhone.setText(data.getString("id").toString())
-        edtResCategory.setText(data.getString("createdAt").toString())
-        edtResProcess.setText(data.getString("createdAt").toString())
+        edtResEmail.setText(data.getString("email").toString())
+        edtResPhone.setText(data.getString("no_telphone").toString())
+        edtResCategory.setText(data.getString("jenis_kekerasan").toString())
+        edtResProcess.setText(data.getString("tindakan_kasus").toString())
     }
 }

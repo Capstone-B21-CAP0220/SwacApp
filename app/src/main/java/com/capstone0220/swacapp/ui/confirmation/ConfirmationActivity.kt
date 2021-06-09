@@ -57,8 +57,12 @@ class ConfirmationActivity : AppCompatActivity(), View.OnClickListener {
         val service = retrofit.create(APIService::class.java)
 
         val jsonObject = JSONObject()
-        jsonObject.put("name",userData.name.toString())
-        jsonObject.put("job",userData.email.toString())
+        jsonObject.put("nama_pelapor",userData.name.toString())
+        jsonObject.put("jenis_pelapor",userData.position.toString())
+        jsonObject.put("lokasi",userData.location.toString())
+        jsonObject.put("deskripsi_laporan",userData.description.toString())
+        jsonObject.put("email",userData.email.toString())
+        jsonObject.put("no_telphone",userData.no_telp.toString())
         val jsonObjectString = jsonObject.toString()
         val requestBody = jsonObjectString.toRequestBody("application/json".toMediaTypeOrNull())
 
@@ -81,6 +85,7 @@ class ConfirmationActivity : AppCompatActivity(), View.OnClickListener {
                 } else {
                     Toast.makeText(this@ConfirmationActivity,response.code().toString(), Toast.LENGTH_SHORT).show()
                     Log.e("RETROFIT_ERROR", response.code().toString())
+                    binding.progressBar.visibility = View.GONE
                 }
             }
         }

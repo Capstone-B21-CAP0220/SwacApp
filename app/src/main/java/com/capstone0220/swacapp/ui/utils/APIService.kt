@@ -7,6 +7,6 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface APIService {
-    @POST("/api/users")
+    @POST("/laporan")
     suspend fun createReport(@Body requestBody: RequestBody): Response<ResponseBody>
 }
